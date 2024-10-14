@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Validador de CPF</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="titel">
+        <h1>Validador de CPF</h1>
+      </div>
+      <div class="container2">
+        <input
+          id="cpfInput"
+          type="text"
+          placeholder="Digite o CPF"
+          maxlength="14"
+          OnKeyPress="formatar('###.###.###-##',this)"
+        />
+        <button id="validaCPF" onclick="salvaCPF()">Validar</button>
+      </div>
+      <div class="container3">
+        <p id="resultado"></p>
+      </div>
+    </div>
+
+    <script src="code.js"></script>
+  </body>
+</html>
